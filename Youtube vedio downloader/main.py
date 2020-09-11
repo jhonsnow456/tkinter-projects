@@ -1,12 +1,14 @@
 from tkinter import *
 from pytube import YouTube
 import os
+import pygame
 
 class Application:
     def __init__(self, root):
         self.root = root
         root.geometry('400x200')
         root.title('Youtube vedio Downloader Application')
+        root.iconbitmap(r'.\res\YoutubeDownloader.ico') 
 
         # create the label widget to welcome user
         self.description = Label(root, text="Welcome!! to \n Youtube Downloader Application", font = 'Consolas 15 bold')
@@ -41,4 +43,8 @@ class Application:
 if __name__ == '__main__':
     root = Tk()
     app = Application(root)
+    pygame.init()
+    pygame.mixer.init()
+    pygame.mixer.music.load(r".\res\xyz.mp3")
+    pygame.mixer.music.play(-1)
     root.mainloop()
