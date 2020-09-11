@@ -1,4 +1,4 @@
-# YOUTUBE VEDIO DOWNLOPADER
+# YOUTUBE VEDIO DOWNLOADER
 
 ![screenshot](./image/image.jpg)
 
